@@ -1,0 +1,134 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #f0f0f0; 
+}
+
+#hasil {
+  margin-top: 20px;
+  display: none;
+}
+
+#loading {
+  display: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #1877F2; /* Green */
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c5d3fb;
+}
+
+#hasil {
+  margin-top: 20px;
+  display: none;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#hasil img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#loading {
+  display: none;
+  font-size: 18px;
+  color: #555;
+}
+
+#loading:after {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #;
+  margin-left: 5px;
+  animation: loading 1s infinite;
+}
+
+@keyframes loading {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.5); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
+}
+/* Gaya dasar hamburger */
+.hamburger button {
+  background-color: transparent; /* Latar belakang transparan */
+  border: none; /* Tidak ada border */
+  cursor: pointer; /* Kursor berubah jadi tangan saat diarahkan */
+  font-size: 24px; /* Ukuran font */
+  padding: 10px; /* Padding */
+}
+
+/* Gaya menu saat disembunyikan */
+#menu {
+  display: none; /* Sembunyikan menu secara default */
+  position: absolute; /* Posisi absolut agar bisa diatur */
+  top: 50px; /* Jarak dari atas */
+  left: 0; /* Jarak dari kiri */
+  background-color: white; /* Latar belakang putih */
+  width: 200px; /* Lebar menu */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Bayangan */
+}
+
+/* Gaya menu saat ditampilkan */
+#menu.active {
+  display: block; /* Tampilkan menu */
+}
+
+/* Gaya tautan di dalam menu */
+#menu a {
+  display: block; /* Tampilkan tautan sebagai blok */
+  padding: 10px; /* Padding */
+  text-decoration: none; /* Hilangkan garis bawah */
+  color: black; /* Warna teks hitam */
+}
+
+/* Gaya hover tautan */
+#menu a:hover {
+  background-color: lightgray; /* Latar belakang abu-abu saat diarahkan */
+}
+
